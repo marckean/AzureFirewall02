@@ -9,7 +9,7 @@
 
 <p style="text-align:center"><img src="AzureFirewall02.jpg" alt="Azure Firewall Hub & Spoke"></p>
 
-Non Gov means you trust sending traffic out to the internet from within Azure. 
+**Non Gov** means you trust sending traffic out to the internet from within Azure. Also included in this example is the Jumpbox Subnet, which a common setup so you can access workloads direct from specific source networks directly into Azure. 
 
 This template creates 3 virtual networks (Servers vNet, Gateway vNet and a Hub vNet for an Azure Firewall). Also inclueded is a jumpbox VM with public IP with RDP access.
 
