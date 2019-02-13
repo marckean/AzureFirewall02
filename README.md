@@ -1,4 +1,4 @@
-# Create AzureFirewall using an Azure ARM template - Non Gov
+# Create AzureFirewall using an Azure ARM template - Trust Public Cloud
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmarckean%2FAzureFirewall02%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
@@ -9,7 +9,7 @@
 
 <p style="text-align:center"><img src="AzureFirewall02.jpg" alt="Azure Firewall Hub & Spoke"></p>
 
-**Non Gov** means you trust sending traffic out to the internet from within Azure. Also included in this example is the Jumpbox Subnet, which a common setup so you can access workloads direct from specific source networks directly into Azure. 
+This **Trust Public Cloud** option means you trust sending traffic out to the internet from within Azure. The Azure Firewall is used as a junction box to allow/disallow to control traffic in and out of Azure. Also included in this example is the Jumpbox Subnet, which a common setup so you can access workloads direct from specific source networks directly into Azure. 
 
 This template creates 3 virtual networks (Servers vNet, Gateway vNet and a Hub vNet for an Azure Firewall). Also inclueded is a jumpbox VM with public IP with RDP access.
 
